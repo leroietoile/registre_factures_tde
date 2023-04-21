@@ -1,0 +1,104 @@
+h1{
+    text-align: center;
+    background-color: rgb(28, 120, 100);
+    /* background-image: linear-gradient(rgb(28, 120, 100), rgba(16, 48, 54, 0.47)); */
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div.layout{
+    background-color: #597d7e;
+    margin: 100px 20%;
+    box-shadow: 20px 15px 5px black;
+    min-width: 400px;
+}
+
+div.layout h2{
+    background-color: black;
+    border: solid black;
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    /* border-radius: 0 100px 0 100px; */
+    margin-top: -25px;
+
+
+}
+
+#div_h2{
+    text-align: center;
+}
+
+div.layout p{
+    font-size: 90%;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+
+div.layout .short_line{
+    background-color: lightgray;
+    height: 2px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.layout .tables_layout{
+    background-color: rgba(255, 255, 255, 0.678);
+    display: inline-block;
+    /* padding: 20px; */
+    text-align: left;
+}
+
+
+div.tables_layout td, div.tables_layout th{
+    /* display: inline-block; */
+    margin: 5px 30px;
+}
+
+div.table_block{
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+}
+
+div.sharing{
+    background-color: rgba(68, 77, 107, 0.993); 
+    border-radius: 20px; 
+    box-shadow: 20px 15px 5px black;
+    padding: 30px 50px;
+    color: white;
+    margin-left: -25px;
+    margin-top: 25px;
+}
+
+div.table_block h3{
+    /* text-align: center; */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+div.table_block td{
+    display: inline-block;
+    margin-left: 8px;
+}
+
+div.note{
+    text-align: center; 
+    background-color: rgba(16, 48, 54, 0.71); 
+    margin: 0;
+    padding: 10px 50px 20px 50px;
+    border-top-left-radius: 50%;
+}
+
+div.note h3{
+    color: white;
+    background-color: grey; 
+    border-radius: 17px; 
+    border: solid grey; 
+    display: inline-block;
+    padding: 6px 40px;
+}
