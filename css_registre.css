@@ -6,13 +6,65 @@ h1{
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 0;
+}
+
+div.choices{
+    position: relative;
+    /* position: fixed; */
+    background-color: #7f7d7dd3;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    /* margin-bottom: 40px; */
+    bottom: -30px;
+    right: -30px;
+}
+
+div.choices a{
+    display: inline-block;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 4px 15px;
+}
+
+div.choices a:hover{
+    font-size: 18px;
+    color: #e9c823;
+    border: none;
+    border-bottom: 1px solid #e9c823;
+}
+
+div.choices_div{
+    /* position: fixed; */
+    display: inline-block;
+    margin-left: 20%;
+    /* margin-top: -23px; */
+    background-color: #7b8f91;
+    width: 62%;
+}
+
+div.comeback_menu{
+    text-align: center;
+}
+
+a.comeback_menu{
+    text-decoration: none;
+    color: #414040;
+    background-color: #bdbbbb9a;
+    border: 2px solid #414040;
+    text-align: center;
+    padding: 5px 20px;
+    font-weight: bold;
 }
 
 div.layout{
     background-color: #597d7e;
-    margin: 100px 20%;
+    margin: 90px 10%;
     box-shadow: 20px 15px 5px black;
-    min-width: 400px;
+    /* min-width: 400px; */
 }
 
 div.layout h2{
@@ -29,6 +81,7 @@ div.layout h2{
 
 #div_h2{
     text-align: center;
+    font-size: 10px;
 }
 
 div.layout p{
@@ -48,7 +101,7 @@ div.layout .short_line{
 
 div.layout .tables_layout{
     background-color: rgba(255, 255, 255, 0.678);
-    display: inline-block;
+    /* display: inline-block; */
     /* padding: 20px; */
     text-align: left;
 }
@@ -56,13 +109,15 @@ div.layout .tables_layout{
 
 div.tables_layout td, div.tables_layout th{
     /* display: inline-block; */
-    margin: 5px 30px;
+    margin: 8px 0;
 }
 
 div.table_block{
     display: inline-block;
-    width: 40%;
-    margin-left: 5%;
+    width: 50%;
+    margin-left: 10%;
+    font-size: 14px;
+    min-width: 200px;
 }
 
 div.sharing{
@@ -79,11 +134,17 @@ div.table_block h3{
     /* text-align: center; */
     font-weight: bold;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 div.table_block td{
     display: inline-block;
-    margin-left: 8px;
+    margin-left: 10px;
+}
+
+.repart_total{
+    color: rgb(198, 232, 104); 
+    font-size: 20px;
 }
 
 div.note{
@@ -91,14 +152,65 @@ div.note{
     background-color: rgba(16, 48, 54, 0.71); 
     margin: 0;
     padding: 10px 50px 20px 50px;
-    border-top-left-radius: 50%;
+    border-top-left-radius: 30%;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 div.note h3{
     color: white;
-    background-color: grey; 
-    border-radius: 17px; 
-    border: solid grey; 
+    background-color: rgba(140, 139, 139, 0.598); 
+    border-radius: 10px 0 10px 0; 
+    border: solid rgb(151, 151, 151); 
     display: inline-block;
-    padding: 6px 40px;
+    padding: 3px 35px;
+    font-size: 15px;
+}
+
+div.note p{
+    color: rgb(216, 215, 215);
+}
+
+@media only screen and (min-width: 768px) { 
+    div.layout{
+        background-color: #597d7e;
+        margin: 100px 20%;
+        min-width: 550px;
+    } 
+    
+    #div_h2{
+        font-size: 16px;
+    }
+
+    div.tables_layout td, div.tables_layout th{
+        margin: 5px 30px;
+    }
+
+    div.table_block{
+        margin-left: 5%;
+        width: 37%;
+        font-size: 16px;
+    }
+
+    div.sharing{
+        margin: 25px 0
+    }
+
+    div.table_block h3{
+        font-size: 30px;
+    }
+
+    .repart_total{
+        font-size: 25px;
+    }
+
+    div.note{
+        border-top-left-radius: 50%;
+        font-size: 18px;
+    }
+
+    div.note h3{
+        font-size: 20px;
+        padding: 6px 35px;
+    }
 }
