@@ -27,7 +27,8 @@ div.choices a{
     color: white;
     text-decoration: none;
     border: 1px solid white;
-    padding: 4px 15px;
+    padding: 4px 20px;
+    font-size: 17px;
 }
 
 div.choices a:hover{
