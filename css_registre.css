@@ -25,7 +25,7 @@ header{
     overflow: hidden;
     border-bottom: solid 1px lightgrey;
     background-color: white;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
 
 img#tde_img{
@@ -194,6 +194,7 @@ div.note h3{
 
 div.note p{
     color: rgb(216, 215, 215);
+    text-align: left;
 }
 
 

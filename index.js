@@ -7,42 +7,38 @@ const valid_search = document.getElementById("valid_search")
 let search_id = "";
 let search_year = "";
 let search_month = "";
-let all_valid_id = ['Août2022', 'Septembre2022', 'Octobre2022', 'Novembre2022', 'Decembre2022', 'Janvier2023', 'Fevrier2023', 'Mars2023', 'Avril2023']
+let all_valid_id = ['Août2022', 'Septembre2022', 'Octobre2022', 'Novembre2022', 'Decembre2022', 'Janvier2023', 'Fevrier2023', 'Mars2023', 'Avril2023', 'Mai2023']
 
-// _________________________________________________________________
+// __________________________________________________________
 
 // const test = getElementById("n2")
 // test.click()
-// ________________________________________________________________
+// __________________________________________________________
 
 
 // _____________________________________________________
 // FIX HEADER DURING SCROLL_____________________
 
-// let last_scroll_top = 0;
 window.addEventListener("scroll", () =>{
-    // let scroll_top = this.scroll_top();
-    // if (last_scroll_top >= scroll_top){
-    //     header.style.position = "fixed";
-    //     header.style.top = "0px";
-    //     header.style.width = "100%";
-    //     header.style.boxShadow = "0 2px 3px rgb(13, 13, 13, 0.2)";
-    // }
-    // else{
-    //     header.style.position = "relative";
-    //     header.style.boxShadow = "none";
-    // }
-    // last_scroll_top = scroll_top;
-    
-    if (window.scrollY > (header.offsetHeight + 50)){
+    if (window.scrollY > (header.offsetHeight + 300)){
         header.style.position = "fixed";
         header.style.top = "0px";
         header.style.width = "100%";
         header.style.boxShadow = "0 2px 3px rgb(13, 13, 13, 0.2)";
     }
+    else if (window.scrollY > header.offsetHeight + 50){
+        header.style.top = "-300px";
+        header.style.width = "100%";
+    }
+    else if (window.scrollY > header.offsetHeight + 150){
+        header.style.position = "fixed";
+        header.style.top = "-300px";
+        header.style.width = "100%";
+    }
     else{
         header.style.position = "relative";
         header.style.boxShadow = "none";
+        header.style.top = "0px";
     }
 })
 
