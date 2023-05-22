@@ -1,70 +1,94 @@
-h1{
-    text-align: center;
-    background-color: rgb(28, 120, 100);
-    /* background-image: linear-gradient(rgb(28, 120, 100), rgba(16, 48, 54, 0.47)); */
-    padding: 10px 0;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 0;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* color: #414141 */
 }
 
-div.choices{
+#test{
+    color: red;
+}
+
+body{
+    margin: 0;
+    padding: 0;
     position: relative;
-    /* position: fixed; */
-    background-color: #7f7d7dd3;
-    display: inline-block;
-    width: 100%;
-    padding: 20px;
-    /* margin-bottom: 40px; */
-    bottom: -30px;
-    right: -30px;
 }
 
-div.choices a{
-    display: inline-block;
-    margin: 10px;
-    color: white;
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 4px 20px;
-    font-size: 17px;
+/* ____________________________ */
+header{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: solid 1px lightgrey;
+    background-color: white;
+    transition-duration: 0.5s;
 }
 
-div.choices a:hover{
-    font-size: 18px;
-    color: #e9c823;
-    border: none;
-    border-bottom: 1px solid #e9c823;
+img#tde_img{
+    width: 90px;
 }
 
-div.choices_div{
-    /* position: fixed; */
-    display: inline-block;
-    margin-left: 20%;
-    /* margin-top: -23px; */
-    background-color: #7b8f91;
-    width: 62%;
+div.search_block{
+    display: flex;
+    align-items: center;
+    position: relative;
+    scale: 0.75;
+    margin-right: -7px;
 }
 
-div.comeback_menu{
-    text-align: center;
+div.select_block{
+    position: absolute;
+    right: -700px;
+    display: flex;
+    bottom: 18px;
+    transition-duration: 0.5s;
 }
 
-a.comeback_menu{
-    text-decoration: none;
-    color: #414040;
-    background-color: #bdbbbb9a;
-    border: 2px solid #414040;
-    text-align: center;
-    padding: 5px 20px;
+select{
+    font-size: 13px;
+    padding-left: 5px;
+    color: rgb(89, 89, 89);
     font-weight: bold;
+}
+
+select#months_select{
+    margin-left: 5px;
+}
+
+div.search_img_container{
+    background-color: white;
+    z-index: 3;
+    /* background-color: red; */
+}
+
+img#search_img{
+    width: 50px;
+}
+
+button#valid_search{
+    margin-left: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(89, 89, 89);
+    border: none;
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+
+/* ____________________________ */
+
+div.div_above_layout{
+    height: 180px;
 }
 
 div.layout{
     background-color: #597d7e;
     margin: 90px 10%;
-    box-shadow: 20px 15px 5px black;
+    box-shadow: 20px 15px 4px #00000066;
     /* min-width: 400px; */
 }
 
@@ -124,7 +148,7 @@ div.table_block{
 div.sharing{
     background-color: rgba(68, 77, 107, 0.993); 
     border-radius: 20px; 
-    box-shadow: 20px 15px 5px black;
+    box-shadow: 20px 15px 5px #00000066;
     padding: 30px 50px;
     color: white;
     margin-left: -25px;
@@ -172,7 +196,33 @@ div.note p{
     color: rgb(216, 215, 215);
 }
 
+
+
 @media only screen and (min-width: 768px) { 
+
+    img#tde_img{
+        width: 200px;
+    }
+
+    div.search_block{
+        scale: 1;
+        margin-right: 0;
+    }
+
+    select{
+        font-size: 14px;
+    }
+
+    select#months_select{
+        margin-left: 10px;
+    }
+
+    button#valid_search{
+        margin-left: 15px;
+        padding: 4px 10px;
+        border-radius: 20px;
+    }
+
     div.layout{
         background-color: #597d7e;
         margin: 100px 20%;
