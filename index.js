@@ -7,7 +7,7 @@ const valid_search = document.getElementById("valid_search")
 let search_id = "";
 let search_year = "";
 let search_month = "";
-let all_valid_id = ['Août2022', 'Septembre2022', 'Octobre2022', 'Novembre2022', 'Decembre2022', 'Janvier2023', 'Fevrier2023', 'Mars2023', 'Avril2023', 'Mai2023']
+let all_valid_id = ['Août2022', 'Septembre2022', 'Octobre2022', 'Novembre2022', 'Decembre2022', 'Janvier2023', 'Fevrier2023', 'Mars2023', 'Avril2023', 'Mai2023', 'Juin2023']
 
 // __________________________________________________________
 
